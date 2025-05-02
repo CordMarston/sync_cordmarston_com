@@ -1,0 +1,39 @@
+version: '3.7'
+
+services:
+  dev_laravel:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sync_laravel
+    command: php artisan serve --host=0.0.0.0 --port=1387
+    restart: always
+    ports:
+    - 127.0.0.1:1387:1387
+    - 127.0.0.1:5174:5174
+    tty: true
+    working_dir: /var/www
+    volumes:
+        - .:/var/www
+    networks:
+      - npmnetwork
+      - syncnetwork
+  sync_mysql:
+    image: mysql
+    restart: always
+    container_name: sync_mysql
+    volumes:
+      - sync_database:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: ##DATABASE##
+      MYSQL_ROOT_PASSWORD: ##PASSWORD##
+    networks:
+      - npmnetwork
+networks:
+    npmnetwork:
+        external: true
+    syncnetwork:
+        driver: bridge
+volumes:
+  sync_database:
+    driver: local
