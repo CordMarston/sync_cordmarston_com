@@ -95,7 +95,11 @@ const maxWidthClass = computed(() => {
                             </h3>
                         </div>
                         <div class="p-4">
-                            <slot name="footer"></slot>
+                            <slot></slot>
+                        </div>
+                        <div class="px-4 py-3 border-t border-gray-200 dark:border-gray-700">
+                            <slot name="footer">
+                            </slot>
                         </div>
                     </div>
                 </Transition>
