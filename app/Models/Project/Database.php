@@ -15,6 +15,7 @@ class Database extends Model
         'collation',
         'character_set',
         'comment',
+        'size'
     ];
 
     public function projectConnection()
@@ -24,6 +25,7 @@ class Database extends Model
 
     public function tables()
     {
-        return $this->hasMany(DatabaseTable::class);
+        return $this->hasMany(DatabaseTable::class, 'connection_database_id');
     }
+
 }

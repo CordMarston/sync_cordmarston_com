@@ -4,10 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Project;
 use Illuminate\Http\Request;
-use Inertia\Inertia;
 use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\DB;
-use PDOException;
+use Inertia\Inertia;
+
 
 class ProjectController extends Controller
 {
@@ -32,8 +31,16 @@ class ProjectController extends Controller
 
     public function connections(Project $project) 
     {
+        $project->load([
+            'connections' => function ($query) {
+                $query->withCount('databases');
+                $query->withSum('databases', 'size');
+            }
+        ]);
+
         return Inertia::render('Projects/Connections', [
             'project' => $project,
+            'connections' => $project->connections,
         ]);
     }
 
@@ -77,53 +84,5 @@ class ProjectController extends Controller
         return Inertia::render('Projects/Index', [
             'projects' => $projects,
         ]);
-    }
-
-    public function testConnection(Request $request)
-    {
-        $type = $request->input('type');
-        if($type == 'live') {
-            $url = $request->input('live_url');
-            $username = $request->input('live_username');   
-            $password = $request->input('live_password');
-            $port = $request->input('live_port');
-        } elseif ($type == 'dev') {
-            $url = $request->input('dev_url');
-            $username = $request->input('dev_username');   
-            $password = $request->input('dev_password');
-            $port = $request->input('dev_port');
-        } else {
-            return redirect()->back()->with('error', 'Invalid connection type.');
-        }
-
-        $config = [
-            'driver' => 'mysql',
-            'host' => $url,
-            'port' => $port ?? 3306,
-            'database' => 'information_schema', // lightweight default DB
-            'username' => $username,
-            'password' => $password,
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
-            'prefix' => '',
-            'strict' => true,
-            'engine' => null,
-        ];
-    
-        try {
-            // Create connection on-the-fly
-            DB::purge('mysql_dynamic');
-            config(['database.connections.mysql_dynamic' => $config]);
-    
-            // Force Laravel to reconnect with new config
-            DB::connection('mysql_dynamic')->getPdo();
-    
-            return response()->json(['success' => true, 'message' => 'Connection successful']);
-        } catch (PDOException $e) {
-            return response()->json(['success' => false, 'message' => $e->getMessage()], 500);
-        }
-
-        return redirect()->back()->with('success', 'Connection successful.');
-
     }
 }

@@ -27,35 +27,6 @@ const form = useForm({
 function submit() {
     form.put(route('projects.update', project.id));
 }
-
-// function testConnection(type) {
-//     if(type == 'dev') {
-//         dev_success.value = null;
-//     } else {
-//         live_success.value = null;
-//     }
-//     // Reset the success state before testing the connection
-//     axios.post(route('projects.test', { id: project.id }), {
-//         ...form, // spread the form data
-//         type     // add the connection type ('dev' or 'live')
-//     })
-//     .then(response => {
-//         if(type == 'dev') {
-//             dev_success.value = true;
-//         } else {
-//             live_success.value = true;
-//         }
-//         // message.value = response.data.message;
-//     })
-//     .catch(error => {
-//         if(type == 'dev') {
-//             dev_success.value = false;
-//         } else {
-//             live_success.value = false;
-//         }
-//         // message.value = error.response?.data?.message || 'Unknown error';
-//     });
-// }
 </script>
 
 <template>

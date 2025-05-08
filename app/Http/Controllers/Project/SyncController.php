@@ -10,7 +10,6 @@ use Illuminate\Support\Facades\Log;
 
 class SyncController extends Controller
 {
-
     public function syncSchema(Project $project)
     {
         Log::info('Syncing schema for project: ' . $project->name);
