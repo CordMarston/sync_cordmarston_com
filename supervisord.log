@@ -1,0 +1,173 @@
+2025-05-08 04:56:16,579 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-05-08 04:56:16,581 INFO supervisord started with pid 1
+2025-05-08 04:56:17,585 INFO spawned: 'npm' with pid 8
+2025-05-08 04:56:17,587 INFO spawned: 'php' with pid 9
+2025-05-08 04:56:17,724 WARN exited: php (exit status 1; not expected)
+2025-05-08 04:56:17,919 WARN exited: npm (exit status 127; not expected)
+2025-05-08 04:56:18,922 INFO spawned: 'npm' with pid 21
+2025-05-08 04:56:18,924 INFO spawned: 'php' with pid 22
+2025-05-08 04:56:19,032 WARN exited: php (exit status 1; not expected)
+2025-05-08 04:56:19,043 WARN exited: npm (exit status 127; not expected)
+2025-05-08 04:56:21,047 INFO spawned: 'npm' with pid 34
+2025-05-08 04:56:21,048 INFO spawned: 'php' with pid 35
+2025-05-08 04:56:21,158 WARN exited: php (exit status 1; not expected)
+2025-05-08 04:56:22,171 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-08 04:56:22,171 WARN exited: npm (exit status 127; not expected)
+2025-05-08 04:56:23,173 INFO spawned: 'npm' with pid 47
+2025-05-08 04:56:23,283 WARN exited: npm (exit status 127; not expected)
+2025-05-08 04:56:24,286 INFO spawned: 'npm' with pid 59
+2025-05-08 04:56:24,287 INFO spawned: 'php' with pid 60
+2025-05-08 04:56:24,389 WARN exited: php (exit status 1; not expected)
+2025-05-08 04:56:24,393 INFO gave up: php entered FATAL state, too many start retries too quickly
+2025-05-08 04:56:25,404 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-08 04:56:25,404 WARN exited: npm (exit status 127; not expected)
+2025-05-08 04:56:26,407 INFO spawned: 'npm' with pid 72
+2025-05-08 04:56:26,515 WARN exited: npm (exit status 127; not expected)
+2025-05-08 04:56:27,518 INFO spawned: 'npm' with pid 84
+2025-05-08 04:56:28,653 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-08 04:56:28,654 WARN exited: npm (exit status 127; not expected)
+2025-05-08 04:56:29,657 INFO spawned: 'npm' with pid 96
+2025-05-08 04:56:29,764 WARN exited: npm (exit status 127; not expected)
+2025-05-08 04:56:30,766 INFO spawned: 'npm' with pid 108
+2025-05-08 04:56:30,876 WARN exited: npm (exit status 127; not expected)
+2025-05-08 04:56:32,880 INFO spawned: 'npm' with pid 120
+2025-05-08 04:56:32,990 WARN exited: npm (exit status 127; not expected)
+2025-05-08 04:56:35,995 INFO spawned: 'npm' with pid 132
+2025-05-08 04:56:36,105 WARN exited: npm (exit status 127; not expected)
+2025-05-08 04:56:37,107 INFO gave up: npm entered FATAL state, too many start retries too quickly
+2025-05-08 04:56:50,121 WARN received SIGQUIT indicating exit request
+2025-05-08 04:58:25,892 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-05-08 04:58:25,895 INFO supervisord started with pid 1
+2025-05-08 04:58:26,898 INFO spawned: 'npm' with pid 6
+2025-05-08 04:58:26,899 INFO spawned: 'php' with pid 7
+2025-05-08 04:58:26,985 WARN exited: php (exit status 1; not expected)
+2025-05-08 04:58:28,457 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-08 04:58:28,458 INFO spawned: 'php' with pid 35
+2025-05-08 04:58:28,473 WARN exited: php (exit status 1; not expected)
+2025-05-08 04:58:30,475 INFO spawned: 'php' with pid 40
+2025-05-08 04:58:31,493 INFO success: php entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-08 04:58:31,493 WARN exited: php (exit status 1; not expected)
+2025-05-08 04:58:32,495 INFO spawned: 'php' with pid 41
+2025-05-08 04:58:33,512 INFO success: php entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-08 04:58:33,514 WARN exited: php (exit status 1; not expected)
+2025-05-08 04:58:34,516 INFO spawned: 'php' with pid 42
+2025-05-08 04:58:34,532 WARN exited: php (exit status 1; not expected)
+2025-05-08 04:58:35,535 INFO spawned: 'php' with pid 43
+2025-05-08 04:58:35,551 WARN exited: php (exit status 1; not expected)
+2025-05-08 04:58:37,553 INFO spawned: 'php' with pid 44
+2025-05-08 04:58:38,571 INFO success: php entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-08 04:58:38,572 WARN exited: php (exit status 1; not expected)
+2025-05-08 04:58:39,575 INFO spawned: 'php' with pid 45
+2025-05-08 04:58:40,596 INFO success: php entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-08 04:58:40,597 WARN exited: php (exit status 1; not expected)
+2025-05-08 04:58:41,599 INFO spawned: 'php' with pid 46
+2025-05-08 04:58:41,616 WARN exited: php (exit status 1; not expected)
+2025-05-08 04:58:42,618 INFO spawned: 'php' with pid 47
+2025-05-08 04:58:43,634 INFO success: php entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-08 04:58:43,635 WARN exited: php (exit status 1; not expected)
+2025-05-08 04:58:44,637 INFO spawned: 'php' with pid 48
+2025-05-08 04:58:44,637 WARN received SIGQUIT indicating exit request
+2025-05-08 04:58:44,638 INFO waiting for npm, php to die
+2025-05-08 04:58:44,655 WARN stopped: php (exit status 1)
+2025-05-08 04:58:45,657 WARN stopped: npm (terminated by SIGTERM)
+2025-05-08 05:00:39,572 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-05-08 05:00:39,573 INFO supervisord started with pid 1
+2025-05-08 05:00:40,575 INFO spawned: 'npm' with pid 7
+2025-05-08 05:00:40,577 INFO spawned: 'php' with pid 8
+2025-05-08 05:00:40,687 WARN exited: php (exit status 1; not expected)
+2025-05-08 05:00:42,222 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-08 05:00:42,224 INFO spawned: 'php' with pid 37
+2025-05-08 05:00:42,225 WARN received SIGQUIT indicating exit request
+2025-05-08 05:00:42,225 INFO waiting for npm, php to die
+2025-05-08 05:00:42,254 WARN stopped: php (exit status 1)
+2025-05-08 05:00:43,256 WARN stopped: npm (terminated by SIGTERM)
+2025-05-08 05:04:55,753 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-05-08 05:04:55,755 INFO supervisord started with pid 1
+2025-05-08 05:04:56,759 INFO spawned: 'npm' with pid 7
+2025-05-08 05:04:56,761 INFO spawned: 'php' with pid 8
+2025-05-08 05:04:56,819 WARN exited: php (exit status 1; not expected)
+2025-05-08 05:04:58,539 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-08 05:04:58,542 INFO spawned: 'php' with pid 36
+2025-05-08 05:04:58,587 WARN exited: php (exit status 1; not expected)
+2025-05-08 05:05:00,592 INFO spawned: 'php' with pid 39
+2025-05-08 05:05:00,609 WARN exited: php (exit status 1; not expected)
+2025-05-08 05:05:03,613 INFO spawned: 'php' with pid 40
+2025-05-08 05:05:03,613 WARN received SIGQUIT indicating exit request
+2025-05-08 05:05:03,613 INFO waiting for npm, php to die
+2025-05-08 05:05:03,627 WARN stopped: php (exit status 1)
+2025-05-08 05:05:04,629 WARN stopped: npm (terminated by SIGTERM)
+2025-05-08 05:06:35,575 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-05-08 05:06:35,577 INFO supervisord started with pid 1
+2025-05-08 05:06:36,580 INFO spawned: 'npm' with pid 6
+2025-05-08 05:06:36,582 INFO spawned: 'php' with pid 7
+2025-05-08 05:06:36,706 WARN exited: php (exit status 1; not expected)
+2025-05-08 05:06:38,329 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-08 05:06:38,331 INFO spawned: 'php' with pid 35
+2025-05-08 05:06:39,348 INFO success: php entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-08 05:06:39,348 WARN exited: php (exit status 1; not expected)
+2025-05-08 05:06:40,351 INFO spawned: 'php' with pid 38
+2025-05-08 05:06:40,367 WARN exited: php (exit status 1; not expected)
+2025-05-08 05:06:41,369 INFO spawned: 'php' with pid 39
+2025-05-08 05:06:42,385 INFO success: php entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-08 05:06:42,386 WARN exited: php (exit status 1; not expected)
+2025-05-08 05:06:43,388 INFO spawned: 'php' with pid 40
+2025-05-08 05:06:44,405 INFO success: php entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-08 05:06:44,406 WARN exited: php (exit status 1; not expected)
+2025-05-08 05:06:45,408 INFO spawned: 'php' with pid 41
+2025-05-08 05:06:45,425 WARN exited: php (exit status 1; not expected)
+2025-05-08 05:06:46,427 INFO spawned: 'php' with pid 42
+2025-05-08 05:06:46,447 WARN exited: php (exit status 1; not expected)
+2025-05-08 05:06:48,450 INFO spawned: 'php' with pid 43
+2025-05-08 05:06:49,468 INFO success: php entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-08 05:06:49,468 WARN exited: php (exit status 1; not expected)
+2025-05-08 05:06:50,470 INFO spawned: 'php' with pid 44
+2025-05-08 05:06:50,470 WARN received SIGQUIT indicating exit request
+2025-05-08 05:06:50,471 INFO waiting for npm, php to die
+2025-05-08 05:06:51,488 WARN stopped: php (exit status 1)
+2025-05-08 05:06:52,489 WARN stopped: npm (terminated by SIGTERM)
+2025-05-08 05:09:07,110 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-05-08 05:09:07,113 INFO supervisord started with pid 1
+2025-05-08 05:09:08,115 INFO spawned: 'npm' with pid 7
+2025-05-08 05:09:08,117 INFO spawned: 'php' with pid 8
+2025-05-08 05:09:09,909 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-08 05:09:09,910 INFO success: php entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-08 05:47:25,202 WARN received SIGQUIT indicating exit request
+2025-05-08 05:47:25,206 INFO waiting for npm, php to die
+2025-05-08 05:47:25,210 WARN stopped: php (terminated by SIGTERM)
+2025-05-08 05:47:26,212 WARN stopped: npm (terminated by SIGTERM)
+2025-05-08 05:47:27,145 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-05-08 05:47:27,148 INFO supervisord started with pid 1
+2025-05-08 05:47:28,151 INFO spawned: 'npm' with pid 7
+2025-05-08 05:47:28,152 INFO spawned: 'php' with pid 8
+2025-05-08 05:47:30,019 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-08 05:47:30,020 INFO success: php entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-08 05:54:58,491 WARN received SIGQUIT indicating exit request
+2025-05-08 05:54:58,491 INFO waiting for npm, php to die
+2025-05-08 05:54:59,493 WARN stopped: php (terminated by SIGTERM)
+2025-05-08 05:55:00,495 WARN stopped: npm (terminated by SIGTERM)
+2025-05-08 06:07:59,924 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-05-08 06:07:59,928 INFO supervisord started with pid 1
+2025-05-08 06:08:00,931 INFO spawned: 'npm' with pid 7
+2025-05-08 06:08:00,932 INFO spawned: 'php' with pid 8
+2025-05-08 06:08:02,047 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-08 06:08:02,047 INFO success: php entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-08 06:09:46,153 WARN received SIGQUIT indicating exit request
+2025-05-08 06:09:46,153 INFO waiting for npm, php to die
+2025-05-08 06:09:47,157 WARN stopped: php (terminated by SIGTERM)
+2025-05-08 06:09:48,159 WARN stopped: npm (terminated by SIGTERM)
+2025-05-08 06:11:26,259 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-05-08 06:11:26,262 INFO supervisord started with pid 1
+2025-05-08 06:11:27,264 INFO spawned: 'npm' with pid 7
+2025-05-08 06:11:27,266 INFO spawned: 'php' with pid 8
+2025-05-08 06:11:29,234 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-08 06:11:29,234 INFO success: php entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-11 08:06:30,175 INFO reaped unknown pid 35 (exit status 0)
+2025-05-11 08:06:30,324 WARN exited: npm (exit status 139; not expected)
+2025-05-11 08:06:31,347 INFO spawned: 'npm' with pid 244
+2025-05-11 08:06:33,118 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-11 16:28:27,648 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-05-11 16:28:27,662 INFO supervisord started with pid 1
+2025-05-11 16:28:28,667 INFO spawned: 'npm' with pid 6
+2025-05-11 16:28:28,669 INFO spawned: 'php' with pid 7
+2025-05-11 16:28:29,687 INFO success: npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-11 16:28:29,691 INFO success: php entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

@@ -30,17 +30,24 @@ COPY --from=composer:2.6.5 /usr/bin/composer /usr/local/bin/composer
 # Set working directory
 WORKDIR /var/www/app
 
-# Copy app source
-COPY . /var/www/app
+# Copy composer files first to leverage Docker layer caching
+COPY composer.json composer.lock ./
 
-# Install PHP dependencies
+# Install PHP dependencies before copying the rest of the source
 RUN composer install --prefer-dist --no-interaction --no-scripts --no-progress
 
-# Install npm dependencies
-RUN npm install
+# Now copy the rest of the app
+COPY . .
 
-# Install and configure Supervisor
+# Re-run npm install after copying full app
+RUN npm install && npm run build
+
+# Copy Supervisor config
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-# Set default command to run supervisor
+# Set permissions (optional but helpful)
+RUN chown -R www-data:www-data /var/www/app \
+    && chmod -R 755 /var/www/app
+
+# Default command
 CMD ["/usr/bin/supervisord"]

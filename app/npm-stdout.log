@@ -1,0 +1,62 @@
+
+> dev
+> vite
+
+
+  VITE v5.4.18  ready in 322 ms
+
+  ➜  Local:   http://localhost:5174/
+  ➜  Network: http://172.18.0.2:5174/
+  ➜  Network: http://172.20.0.5:5174/
+
+  LARAVEL v10.48.29  plugin v1.2.0
+
+  ➜  APP_URL: https://sync.cordmarston.com
+
+> dev
+> vite
+
+
+  VITE v5.4.18  ready in 310 ms
+
+  ➜  Local:   http://localhost:5174/
+  ➜  Network: http://172.20.0.4:5174/
+  ➜  Network: http://172.18.0.2:5174/
+
+  LARAVEL v10.48.29  plugin v1.2.0
+
+  ➜  APP_URL: https://sync.cordmarston.com
+6:43:19 AM [vite] .env changed, restarting server...
+6:43:19 AM [vite] server restarted.
+
+  LARAVEL v10.48.29  plugin v1.2.0
+
+  ➜  APP_URL: https://sync.cordmarston.com
+
+> dev
+> vite
+
+
+  VITE v5.4.18  ready in 322 ms
+
+  ➜  Local:   http://localhost:5174/
+  ➜  Network: http://172.20.0.4:5174/
+  ➜  Network: http://172.18.0.2:5174/
+
+  LARAVEL v10.48.29  plugin v1.2.0
+
+  ➜  APP_URL: https://sync.cordmarston.com
+
+> dev
+> vite
+
+
+  VITE v5.4.18  ready in 2100 ms
+
+  ➜  Local:   http://localhost:5174/
+  ➜  Network: http://172.20.0.11:5174/
+  ➜  Network: http://172.18.0.2:5174/
+
+  LARAVEL v10.48.29  plugin v1.2.0
+
+  ➜  APP_URL: https://sync.cordmarston.com
